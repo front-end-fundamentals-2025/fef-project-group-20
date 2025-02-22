@@ -1,3 +1,21 @@
+#logo {
+  font-weight: 600;
+  font-size: large;
+  display: inline-block;
+  text-align: justify;
+}
+ul {
+  list-style-type: none;
+  padding: 0%;
+  margin: 2rem;
+
+  overflow: none;
+}
+li {
+  display: inline-flex;
+  color: black;
+}
+
 /*body*/
 body {
   display: grid;
@@ -10,7 +28,9 @@ body {
     "footer footer footer footer";
   gap: 0;
 }
-
+header {
+  grid-area: header;
+}
 /*pictures*/
 main {
   grid-area: main;
@@ -19,12 +39,11 @@ main {
 #category-container {
   background-color: blueviolet;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 .shop {
-  height: 50%;
-  width: 30%;
-  padding: 10;
+  height: auto;
+  width: auto;
 }
 
 /*aside*/

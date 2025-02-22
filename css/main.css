@@ -1,0 +1,19 @@
+#logo {
+  font-weight: 600;
+  font-size: large;
+  display: inline-block;
+  text-align: justify;
+  font-style: ;
+}
+ul {
+  list-style-type: none;
+  padding: 0%;
+  margin: 2rem;
+
+  overflow: none;
+}
+li {
+  display: inline-flex;
+  color: black;
+  padding: 1rem;
+}
