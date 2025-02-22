@@ -1,24 +1,40 @@
 /*body*/
-main {
+body {
   display: grid;
-  grid-template-columns: repeat(4);
-  grid-template-areas: 
-  aside body body body;
-  aside body body body;
-  aside body body body;
-  aside body body body;
-  
+  grid-template-areas:
+    "header header header header"
+    "aside main main main"
+    "aside main main main"
+    "aside main main main"
+    "aside main main main"
+    "footer footer footer footer";
+  gap: 0;
 }
 
 /*pictures*/
+main {
+  grid-area: main;
+}
+
+#category-container {
+  background-color: blueviolet;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 .shop {
-  display: body;
-  grid-template-columns: repeat(3);
-  grid-template-rows: repeat(4);
+  height: 50%;
+  width: 30%;
+  padding: 10;
 }
 
 /*aside*/
-aside{
-    display: aside;
-border-end-end-radius: solid red;
+aside {
+  background-color: aqua;
+  grid-area: aside;
+  border-end-end-radius: solid red;
+}
+
+footer {
+  background-color: rgb(233, 141, 21);
+  grid-area: footer;
 }
