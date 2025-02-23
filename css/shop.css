@@ -39,30 +39,62 @@ main {
 }
 
 #category-container {
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
 }
 
+/*pictures captions*/
+figure {
+  margin-right: 10px;
+  position: relative;
+}
 /*pictures size and appearance*/
 .shop {
-  height: 100%;
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  height: 90%;
+  width: 90%;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   border: 2px;
   border-color: lightgrey;
+  transition: all 0.3s ease-in;
 }
 
-/*pictures captions*/
+/*picture animation*/
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
 
 figcaption {
   margin-top: 10px;
-  font-size: 1rem;
-  color: white;
+  font-size: 2rem;
+  color: rgb(254, 213, 111);
   text-align: center;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+figure:hover .shop{
+  filter: blur(8px);
+  animation-name: grow;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+figure:hover figcaption{
+  opacity: 5;
 }
 
 /*aside*/
