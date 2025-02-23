@@ -8,7 +8,6 @@ ul {
   list-style-type: none;
   padding: 0%;
   margin: 2rem;
-
   overflow: none;
 }
 li {
@@ -61,6 +60,7 @@ aside {
   background-color: aqua;
   grid-area: aside;
   border-end-end-radius: solid red;
+  padding: 3rem;
 }
 
 footer {
