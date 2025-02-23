@@ -1,0 +1,15 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(5);
+  grid-template-areas:
+    "first first first"
+    "second second second"
+    "third third third";
+}
+main {
+  grid-area: first;
+}
+#differproject {
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+}
