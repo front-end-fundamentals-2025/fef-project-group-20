@@ -1,0 +1,88 @@
+/*header and nav*/
+
+header {
+    position: fixed;
+    width: 100%;
+    color: white;
+  }
+
+#logo {
+    font-weight: 600;
+    font-size: large;
+    display: inline-block;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0%;
+    margin: 2rem;
+    overflow: none;
+  }
+  
+  li {
+    display: inline-flex;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+  }
+  
+  a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+/* form */
+
+form {
+    position: absolute;
+    top: 40%;
+    right: 55%;
+    width: 40%;
+    padding: 2%;
+    background: rgba(red, green, blue, 1);
+    border-radius: 16px;
+    color: white;
+    border-color: white;
+  }
+
+  input, textarea {
+  width: 100%;
+  margin-bottom: 5%;
+  padding: 2%;
+  background: rgba(255, 255, 255, 0.056);
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  border-color: white;
+  }
+
+  input::placeholder, textarea::placeholder, button::placeholder {
+    color: white;
+  }
+  
+  textarea {
+    height: 40%;
+  }
+ 
+  button {
+    padding: 2% 2%;
+    background: rgba(255, 255, 255, 0.138);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    border-color: white;
+
+  }
+
+  button:hover {
+    background: rgba(red, green, blue, 0.3);
+    transform: translateY(-2px);
+  }
+
+  form, input, textarea, button {
+    font-weight: 500;
+  }
+  
+  
