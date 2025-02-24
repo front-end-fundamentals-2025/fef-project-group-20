@@ -1,0 +1,56 @@
+
+/*nav and header*/
+
+header {
+    position: relative;
+    width: 100%;
+    color: rgb(0, 0, 0);
+  }
+
+#logo {
+    font-weight: 600;
+    font-size: large;
+    display: inline-block;
+    text-align: justify;
+    color: 
+    rgb(0, 0, 0);
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0%;
+    margin: 2rem;
+    overflow: none;
+  }
+  
+  li {
+    display: inline-flex;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+  }
+  
+  a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+/* form */
+form {
+    width: 400px;
+    margin: 20px;
+  }
+  input, textarea {
+  width: 300px;
+  margin-bottom: 10px;
+  padding: 8px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+ 
+  button {
+    padding: 8px 20px;
+    background: green;
+    color: white;
+    border: none;
+  }
