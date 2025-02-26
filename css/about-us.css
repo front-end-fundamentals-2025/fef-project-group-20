@@ -1,15 +1,50 @@
+/*navigation bar*/
+#logo {
+  font-weight: 600;
+  font-size: large;
+  display: inline-block;
+  text-align: justify;
+}
+ul {
+  list-style-type: none;
+  padding: 0%;
+  margin: 2rem;
+
+  overflow: none;
+}
+li {
+  display: inline-flex;
+  color: black;
+  padding: 1rem;
+}
+
+/*bodt part*/
+
 body {
   display: grid;
-  grid-template-columns: repeat(5);
+  grid-template-columns: repeat(3);
   grid-template-areas:
+    "header header header"
     "first first first"
     "second second second"
     "third third third";
+}
+header {
+  grid-area: header;
 }
 main {
   grid-area: first;
 }
 #differproject {
   display: grid;
-  grid-template-columns: repeat(5, 2fr);
+  grid-template-columns: repeat(4, 2fr);
+}
+.category-project {
+  width: 50%;
+}
+div {
+  grid: second;
+}
+footer {
+  grid-area: third;
 }
