@@ -176,7 +176,10 @@ form {
   text-align: center;
 }
 
-h1, h2 {
+h1 {
+  margin-left: 0;
+}
+h2 {
   margin-left: 160px;
   margin-bottom: 20px;
   font-weight: bold;
