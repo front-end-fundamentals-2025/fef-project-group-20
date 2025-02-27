@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/sign-in.css">
+    <script src="js/sign-in.js" defer></script>
   </head>
   <header>
     <nav>
@@ -18,10 +19,41 @@
    </nav>
   </header>
   <body>
-    <form action="#">
-        <input type="text" placeholder="enter your name">
-        <textarea placeholder="write your message"></textarea>
-        <button type="submit">submit</button>
-      </form>
+    <main class="container">
+      <section class="form-container form-container-login">
+        <form action="#">
+          <h1>Login</h1>
+          <input type="email" placeholder="Email">
+          <input type="password" placeholder="Password">
+          <button type="submit">Login</button>
+        </form>
+      </section>
+
+      <section class="form-container form-container-signup">
+        <form action="#">
+          <h1>Create Account</h1>
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <input type="password" placeholder="Password">
+          <button type="submit">Sign up</button>
+        </form>
+      </section>
+
+      <aside class="overlay-container">
+        <article class="overlay">
+          <section class="overlay-panel overlay-left">
+            <h2>Welcome Back</h2>
+            <p>Helo friend to keep connected with us login</p>
+            <button class="ghost" id="login" type="button">Login</button>
+          </section>
+
+          <section class="overlay-panel overlay-right">
+            <h2>Hello, friend</h2>
+            <p>enter your personal details</p>
+            <button class="ghost" id="signup" type="button">Sign up</button>
+          </section>
+        </article>
+      </aside>
+    </main>
   </body>
 </html>
