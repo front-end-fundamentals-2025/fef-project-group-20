@@ -32,6 +32,9 @@ body {
 header {
   grid-area: header;
 }
+#header-pic {
+  width: max-content;
+}
 main {
   grid-area: first;
 }
@@ -41,10 +44,25 @@ main {
 }
 .category-project {
   width: 50%;
+  border-radius: 18rem;
 }
 div {
   grid: second;
 }
 footer {
+  background-color: blue;
   grid-area: third;
+  display: flex;
+  width: auto;
+  min-height: fit-content;
+}
+
+#left {
+  flex-grow: 1.2;
+}
+#center {
+  flex-grow: 3;
+}
+#right {
+  flex-grow: 1.2;
 }
