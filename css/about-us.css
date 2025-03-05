@@ -50,19 +50,34 @@ div {
   grid: second;
 }
 footer {
-  background-color: blue;
+  background-color: rgb(170, 173, 163);
   grid-area: third;
   display: flex;
+
   width: auto;
   min-height: fit-content;
+  text-size-adjust: 30;
+}
+
+.insta-pic {
+  width: 5%;
+  gap: 10%;
 }
 
 #left {
+  flex-direction: column;
   flex-grow: 1.2;
 }
 #center {
+  flex-direction: row;
   flex-grow: 3;
 }
+#footer-pic {
+  display: grid;
+  grid-template-columns: repeat(3);
+  grid-template-rows: repeat(3);
+}
 #right {
+  flex-direction: row-reverse;
   flex-grow: 1.2;
 }
