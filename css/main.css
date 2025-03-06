@@ -8,42 +8,123 @@ ul {
   list-style-type: none;
   padding: 0%;
   margin: 2rem;
-
-  overflow: none;
+  overflow: hidden;
 }
+
 li {
   display: inline-flex;
   color: black;
   padding: 1rem;
-}
-body {
-  background: blue;
 }
 
 .slider-container {
   width: 100%;
   height: 500px;
   position: relative;
+  overflow: hidden;
 }
 
 .slide {
-  display: none;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
-  display: none;
+  transition: opacity 1s ease-in-out 
+  
 }
 
 .slide.active {
-  display: block;
+  display: visible;
   opacity: 1;
 }
 
 .slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+}
+
+body {
+  display: grid;
+
+  grid-template-areas:
+    "header header header"
+    "first first first"
+    "second second second"
+    "third third third";
+}
+
+header {
+  grid-area: header;
+}
+
+#header-pic {
+  width: max-content;
+}
+
+main {
+  grid-area: first;
+}
+
+#differproject {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+}
+
+.category-project {
+  width: 50%;
+  border-radius: 18rem;
+}
+
+div {
+  grid: second;
+}
+
+footer {
+  background-color: rgb(170, 173, 163);
+  grid-area: third;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  width: auto;
+  min-height: fit-content;
+  text-size-adjust: 30;
+}
+
+.insta-pic {
+  width: 10rem;
+  border-radius: 2rem;
+}
+
+#left {
+  flex-direction: column;
+  flex-grow: 1.2;
+}
+
+#center {
+  flex-direction: row;
+  flex-grow: 3;
+}
+
+#footer-pic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#right {
+  flex-direction: row-reverse;
+  flex-grow: 1.2;
+}
+
+h3 {
+  margin-left: 75px;
+}
+
+.foot {
+  list-style-type: none;
+  padding-left: 10%;
+  margin: 1rem;
+  overflow: none;
 }
