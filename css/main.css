@@ -35,9 +35,10 @@ li {
   padding: 1rem;
 }
 
-a {
+.nav {
   color: rgb(255, 255, 255);
   text-decoration: none;
+  margin-left: 0px
 }
 
 .slider-container {
@@ -107,7 +108,7 @@ div {
 }
 
 #shop-button {
-  top: 50rem;
+  top: 20rem;
   right: 50%;
   padding: 15px 30px;
   color: rgb(0, 0, 0);
@@ -115,6 +116,6 @@ div {
   font-weight: bold;
   font-size: 18px;
   border-radius: 5px;
-  z-index: 10;
+  z-index: 100;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
