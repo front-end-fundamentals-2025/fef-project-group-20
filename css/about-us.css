@@ -25,6 +25,7 @@ body {
     "first first first"
     "second second second"
     "third third third";
+  row-gap: 4rem;
 }
 header {
   grid-area: header;
@@ -38,14 +39,42 @@ main {
 #differproject {
   display: grid;
   grid-template-columns: repeat(4, 2fr);
+  margin-left: 10rem;
 }
 .category-project {
   width: 50%;
   border-radius: 18rem;
 }
-div {
-  grid: second;
+
+#content {
+  grid-area: second;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  row-gap: 2rem;
 }
+
+h2,
+p {
+  .old-standard-tt-regular {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .old-standard-tt-bold {
+    font-family: "Old Standard TT", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .old-standard-tt-regular-italic {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+
 footer {
   background-color: rgb(170, 173, 163);
   grid-area: third;
