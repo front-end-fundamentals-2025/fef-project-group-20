@@ -5,11 +5,8 @@
   display: inline-block;
   text-align: justify;
 }
-ul {
+#nav {
   list-style-type: none;
-  padding: 0%;
-  margin: 2rem;
-
   overflow: none;
 }
 li {
@@ -22,7 +19,7 @@ li {
 
 body {
   display: grid;
-  grid-template-columns: repeat(3);
+
   grid-template-areas:
     "header header header"
     "first first first"
@@ -52,7 +49,8 @@ div {
 footer {
   background-color: rgb(170, 173, 163);
   grid-area: third;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 
   width: auto;
   min-height: fit-content;
@@ -60,8 +58,8 @@ footer {
 }
 
 .insta-pic {
-  width: 5%;
-  gap: 10%;
+  width: 10rem;
+  border-radius: 2rem;
 }
 
 #left {
@@ -72,12 +70,24 @@ footer {
   flex-direction: row;
   flex-grow: 3;
 }
+
 #footer-pic {
   display: grid;
-  grid-template-columns: repeat(3);
-  grid-template-rows: repeat(3);
+  grid-template-columns: repeat(3, 1fr);
 }
+
 #right {
   flex-direction: row-reverse;
   flex-grow: 1.2;
+}
+
+h3 {
+  margin-left: 75px;
+}
+
+.foot {
+  list-style-type: none;
+  padding-left: 10%;
+  margin: 1rem;
+  overflow: none;
 }
