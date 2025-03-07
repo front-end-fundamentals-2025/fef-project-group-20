@@ -31,7 +31,7 @@ header {
   grid-area: header;
 }
 #header-pic {
-  width: max-content;
+  width: 100%;
 }
 main {
   grid-area: first;

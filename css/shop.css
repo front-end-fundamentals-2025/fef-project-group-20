@@ -1,4 +1,3 @@
-
 /*header and nav*/
 #logo {
   font-weight: 600;
@@ -86,14 +85,14 @@ figcaption {
   transition: opacity 0.3s ease;
 }
 
-figure:hover .shop{
+figure:hover .shop {
   filter: blur(8px);
   animation-name: grow;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
 
-figure:hover figcaption{
+figure:hover figcaption {
   opacity: 5;
 }
 
@@ -106,6 +105,47 @@ aside {
 }
 
 footer {
-  background-color: rgb(233, 141, 21);
+  background-color: rgb(170, 173, 163);
   grid-area: footer;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  width: auto;
+  min-height: fit-content;
+  text-size-adjust: 30;
+}
+
+.insta-pic {
+  width: 10rem;
+  border-radius: 2rem;
+}
+
+#left {
+  flex-direction: column;
+  flex-grow: 1.2;
+}
+#center {
+  flex-direction: row;
+  flex-grow: 3;
+}
+
+#footer-pic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#right {
+  flex-direction: row-reverse;
+  flex-grow: 1.2;
+}
+
+h3 {
+  margin-left: 75px;
+}
+
+.foot {
+  list-style-type: none;
+  padding-left: 10%;
+  margin: 1rem;
+  overflow: none;
 }
