@@ -1,38 +1,59 @@
 /*navigation bar*/
+header {
+  position: absolute;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  justify-content: center;
+  padding: 10px 0;
+  z-index: 1000;
+  background-color: rgb(0, 0, 0);
+  height: 50px;
+  border: 0;
+  margin: 0;
+}
+
 #logo {
   font-weight: 600;
   font-size: large;
   display: inline-block;
   text-align: justify;
-}
-#nav {
-  list-style-type: none;
-  overflow: none;
-}
-li {
-  display: inline-flex;
-  color: black;
-  padding: 1rem;
+  color: rgb(255, 255, 255);
 }
 
+ul {
+  list-style-type: none;
+  padding: 0%;
+  margin-top: 0;
+  overflow: none;
+}
+
+li {
+  display: inline-flex;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+}
 /*bodt part*/
 
 body {
   display: grid;
 
   grid-template-areas:
-    "header header header"
     "first first first"
     "second second second"
     "third third third";
-  row-gap: 4rem;
+  row-gap: 15rem;
 }
-header {
-  grid-area: header;
-}
+
 #header-pic {
   width: 100%;
+
+  animation: disappear linear;
+  animation-timeline: scroll();
+  animation-range: entry 0;
 }
+
 main {
   grid-area: first;
 }
@@ -42,8 +63,12 @@ main {
   margin-left: 10rem;
 }
 .category-project {
-  width: 50%;
+  width: 80%;
   border-radius: 18rem;
+  animation: appear linear;
+  animation-timeline: VIEW();
+  animation-range: entry 10%;
+  padding-top: 10rem;
 }
 
 #content {
@@ -52,6 +77,9 @@ main {
   place-items: center;
   text-align: center;
   row-gap: 2rem;
+  animation: appear linear;
+  animation-timeline: VIEW();
+  animation-range: entry 10%;
 }
 
 h2,
@@ -60,6 +88,12 @@ p {
     font-family: "Old Standard TT", serif;
     font-weight: 400;
     font-style: normal;
+  }
+  #farms {
+    grid-area: one;
+  }
+  #goals {
+    grid-area: two;
   }
 
   .old-standard-tt-bold {
@@ -75,6 +109,27 @@ p {
   }
 }
 
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+    scale: 1;
+  }
+  to {
+    opacity: 0;
+    scale: 0.5;
+  }
+}
 footer {
   background-color: rgb(170, 173, 163);
   grid-area: third;
