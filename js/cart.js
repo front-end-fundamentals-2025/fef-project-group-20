@@ -1,22 +1,26 @@
-let cartPart = JSON.parse(localStorage.getItem("cart")) || [];
-const cartItem = document.getElementById("card-container");
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+const cartItem = document.getElementById("cart-container");
 
 function addToCart(name, image, price) {
   cart.push({ name, image, price });
   localStorage.setItem("cart", JSON.stringify(cart));
+  if (document.getElementById("cart-container")) {
+    showCart();
+  }
 }
 
 function showCart() {
   if (cartItem) {
     cartItem.innerHTML = "";
-    cart.array.forEach((item, index) => {
+    cart.forEach((item, index) => {
       let div = document.createElement("div");
       div.className = "cartItem";
       div.innerHTML = `
      <img src="${item.image}" alt="${item.name}">
      <span>${item.name} - ${item.price}</span>
      <button onclick="removeFromCart(${index})">Remove</button>`;
-      cardItem.appendChild(div);
+      cartItem.appendChild(div);
     });
   }
 }
@@ -27,6 +31,6 @@ function removeFromCart(index) {
   showCart();
 }
 
-if (document.getElementById("cartItems")) {
+if (cartItem) {
   showCart();
 }

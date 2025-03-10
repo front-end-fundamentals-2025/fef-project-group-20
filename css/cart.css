@@ -13,3 +13,64 @@ h1 {
     color: #e6a817;
     margin-top: 20px;
 }
+
+.cartItem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: white;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, blu0e, 0.05);
+    transition: transform 0.3s ease, box-shodow 0.3s ease;
+}
+
+.cartItem:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cartItem img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.cartItem:hover img {
+    transform: scale(1.1);
+}
+
+.cartItem span {
+    flex-grow: 1;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.cartItem:hover span {
+    color: #e6a817;
+}
+
+.cartItem button {
+    background-color: #e6a817;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cartItem button:hover {
+    background-color: #d49700;
+    transform: scale(1.05);
+}
+
+.cartItem button:active {
+    transform: scale(0.95);
+}
