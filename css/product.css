@@ -94,6 +94,7 @@ body {
 }
 
 main {
+  width: 95vw;
   grid-area: first;
 }
 
@@ -110,16 +111,18 @@ main {
 .product-img figure {
   display: flex;
   justify-content: center;
+  padding-top: 6rem;
 }
 
-#tahini {
-  max-width: 100%;
+#product-pic {
+  max-width: 90%;
   border-radius: 20px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  padding: 0 0 0 0;
 }
 
-#tahini:hover {
+#product-pic:hover {
   transform: scale(1.02);
 }
 
@@ -210,6 +213,7 @@ main {
   gap: 2.5rem;
   position: relative;
   animation: slideproduct 20s linear infinite;
+  width: max-content;
 }
 
 @keyframes slideproduct {
@@ -219,6 +223,11 @@ main {
   100% {
     transform: translateX(-50%);
   }
+}
+
+.product-grid::after {
+  content: "";
+  display: block;
 }
 
 #related-products h2 {
