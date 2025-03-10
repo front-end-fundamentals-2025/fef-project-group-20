@@ -218,3 +218,29 @@ h3 {
   margin: 1rem;
   overflow: none;
 }
+
+/* respansiv */
+
+@media screen and (max-width: 992px) {
+  .mobile-nav{
+    display: block;
+  }
+
+  header,nav,ul,li{
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  #product-showcase {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+}
