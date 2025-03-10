@@ -1,46 +1,39 @@
-
-/*nav and header*/
-
+/*navigation bar*/
 header {
   position: absolute;
   width: 100%;
-  color: rgb(255, 255, 255);
   top: 0;
   left: 0;
   justify-content: center;
   padding: 10px 0;
   z-index: 1000;
   background-color: rgb(0, 0, 0);
-  height: 50px;
+  padding: 0;
+
+  border: 0;
+  margin: 0;
 }
 
-#logo {
-  font-weight: 600;
-  font-size: large;
-  display: inline-block;
-  text-align: justify;
-  color: rgb(255, 255, 255);
-}
+#nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-ul {
   list-style-type: none;
-  padding: 0%;
-  margin-top: 0;
+  padding: 0 0 0 0;
+
+  margin: 0 0 0;
   overflow: none;
 }
-
+#logo-pic {
+  width: 5%;
+  height: fit-content;
+}
 li {
   display: inline-flex;
   color: rgb(255, 255, 255);
-  padding: 1rem;
+  padding: 0.8rem;
 }
-
-.nav {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  margin-left: 0px
-}
-
 /* mobile mode respansive */
 
 .mobile-nav {
@@ -95,8 +88,7 @@ li {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 1s ease-in-out 
-  
+  transition: opacity 1s ease-in-out;
 }
 
 .slide.active {
@@ -162,11 +154,14 @@ div {
     margin: 0;
     padding: 0;
   }
-   .mobile-nav{
+  .mobile-nav {
     display: block;
   }
 
-  header,nav,ul,li{
+  header,
+  nav,
+  ul,
+  li {
     display: none;
   }
 
@@ -177,7 +172,6 @@ div {
   .slide img {
     height: 50%;
   }
-
 }
 
 @media screen and (max-width: 576px) {
@@ -189,7 +183,7 @@ div {
     height: 25%;
   }
 
-  .mobile-nav{
+  .mobile-nav {
     margin-bottom: 0;
   }
 }

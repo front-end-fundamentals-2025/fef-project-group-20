@@ -1,20 +1,38 @@
-/*header and nav*/
-#logo {
-  font-weight: 600;
-  font-size: large;
-  display: inline-block;
-  text-align: justify;
+/*navigation bar*/
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  padding: 10px 0;
+  z-index: 1000;
+  background-color: rgb(0, 0, 0);
+  padding: 0;
+
+  border: 0;
+  margin: 0;
 }
-ul {
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
   list-style-type: none;
-  padding: 0%;
-  margin: 2rem;
+  padding: 0 0 0 0;
+
+  margin: 0 0 0;
   overflow: none;
+}
+#logo-pic {
+  width: 5%;
+  height: fit-content;
 }
 li {
   display: inline-flex;
-  color: black;
-  padding: 1rem;
+  color: rgb(255, 255, 255);
+  padding: 0.8rem;
 }
 
 /* mobile nav mode */
@@ -201,33 +219,35 @@ h3 {
 
 @media screen and (max-width: 992px) {
   body {
-    grid-template-areas: 
-    "header header header header"
-    "main main main main"
-    "aside aside aside aside";
+    grid-template-areas:
+      "header header header header"
+      "main main main main"
+      "aside aside aside aside";
     padding-bottom: 70px;
   }
   #category-container {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .shop {
     width: 100%;
     height: 100%;
   }
 
-  .mobile-nav{
+  .mobile-nav {
     display: block;
   }
 
-  header,nav,ul,li{
+  header,
+  nav,
+  ul,
+  li {
     display: none;
   }
 
   footer {
     display: none;
   }
-
 }
 
 @media screen and (max-width: 576px) {
@@ -239,6 +259,4 @@ h3 {
     width: 90%;
     height: 90%;
   }
-  
 }
-
