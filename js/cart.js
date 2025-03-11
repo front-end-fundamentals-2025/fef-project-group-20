@@ -1,7 +1,11 @@
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 const cartItem = document.getElementById("cart-container");
+const openCartButton =document.getElementById("open-cart");
+const closeCartButton =document.getElementById("close-cart");
+const cartOverlay =document.getElementById("cart-overlay");
 
+// add to cart 
 function addToCart(name, image, price) {
   cart.push({ name, image, price });
   localStorage.setItem("cart", JSON.stringify(cart));
@@ -34,3 +38,13 @@ function removeFromCart(index) {
 if (cartItem) {
   showCart();
 }
+
+// open 
+openCartButton.addEventListener("click", function (){
+  cartOverlay.classList.add("active");
+});
+
+// close
+ closeCartButton.addEventListener("click", function (){
+  cartOverlay.classList.remove("active");
+}); 
