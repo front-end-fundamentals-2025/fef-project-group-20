@@ -247,15 +247,24 @@ h3 {
   footer {
     display: none;
   }
+  aside {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 576px) {
   #category-container {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .shop {
     width: 90%;
     height: 90%;
+    border-radius: 5px;
+  }
+  aside {
+    display: none;
+  }
+  figcaption {
+    display: none;
   }
 }

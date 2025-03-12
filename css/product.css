@@ -82,6 +82,15 @@ li {
   align-items: center;
 }
 
+/* back mobile nav button */
+ #back-button {
+  display: none;
+  position: absolute;
+  bottom: 70rem;
+  left: 5rem;
+  z-index: 1000;
+}
+
 body {
   display: grid;
   grid-template-areas:
@@ -313,4 +322,40 @@ h3 {
   padding-left: 10%;
   margin: 1rem;
   overflow: none;
+}
+
+/* respansiv */
+
+@media screen and (max-width: 992px) {
+  .mobile-nav {
+    display: block;
+  }
+
+  header,
+  nav,
+  ul,
+  li {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+  #back-button{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #back-button{
+    display: block;
+  }
+  
+  #product-showcase {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
 }
