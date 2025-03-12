@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css" />
-    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/cart.css" />
+    <script src="js/cart.js" defer></script>
   </head>
   <header>
     <!-- navigation bar -->
@@ -18,7 +19,7 @@
         <a href="contact-us.html"><li>contact us</li></a>
         <a href="sign-in.html"><li>sign up</li></a>
         <a href="sign-up.html"><li>sign in</li></a>
-        <a href="cart.html"><li>cart</li></a>
+        <li><button id="open-cart"><img id="cart-img" src="icon/shopping-cart (4).png" alt="cart"></button></li>
       </ul>
     </nav>
   </header>
@@ -55,6 +56,13 @@
       </div>
       <a href="shop.html" id="shop-button">shop now</a>
     </main>
+    <div id="cart-overlay" class="cart-overlay">
+      <div class="cart-overlay-content"></div>
+      <button id="close-cart">X</button>
+      <h1 id="cart">Your Cart</h1>
+      <div id="cart-container"></div>
+      <p id="total-price">Total = 0</p>
+  </div>
 
     <!-- responsive nav mood -->
     <nav class="mobile-nav">

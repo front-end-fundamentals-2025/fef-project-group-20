@@ -107,6 +107,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 6rem;
+  
 }
 
 /*pictures captions*/
@@ -116,8 +117,8 @@ figure {
 }
 /*pictures size and appearance*/
 .shop {
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   border-radius: 20px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   border: 2px;
@@ -255,12 +256,13 @@ h3 {
 @media screen and (max-width: 576px) {
   #category-container {
     grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    padding-right: 20px;
   }
-  .shop {
-    width: 90%;
-    height: 90%;
-    border-radius: 5px;
-  }
+  /* .shop {
+    width: 200%;
+    height: 200%;
+  } */
   aside {
     display: none;
   }
