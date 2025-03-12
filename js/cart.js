@@ -40,11 +40,15 @@ if (cartItem) {
 }
 
 // open 
-openCartButton.addEventListener("click", function (){
+if (openCartButton) {
+  openCartButton.addEventListener("click", function (){
   cartOverlay.classList.add("active");
 });
+}
 
 // close
- closeCartButton.addEventListener("click", function (){
+ if (closeCartButton){
+  closeCartButton.addEventListener("click", function (){
   cartOverlay.classList.remove("active");
 }); 
+ }
