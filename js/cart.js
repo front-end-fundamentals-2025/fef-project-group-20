@@ -4,6 +4,7 @@ const cartItem = document.getElementById("cart-container");
 const openCartButton =document.getElementById("open-cart");
 const closeCartButton =document.getElementById("close-cart");
 const cartOverlay =document.getElementById("cart-overlay");
+const mobileOpenCart =document.getElementById("mobile-open-cart")
 
 // add to cart 
 function addToCart(name, image, price) {
@@ -44,6 +45,15 @@ if (openCartButton) {
   openCartButton.addEventListener("click", function (){
   cartOverlay.classList.add("active");
 });
+}
+
+// open in responsive mode
+if (mobileOpenCart) {
+  mobileOpenCart.addEventListener("click", function() {
+    if (cartOverlay) {
+      cartOverlay.classList.add("active");
+    }
+  });
 }
 
 // close
