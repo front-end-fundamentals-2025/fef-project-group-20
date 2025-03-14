@@ -1,6 +1,6 @@
 /*navigation bar*/
 header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
@@ -34,8 +34,7 @@ li {
   color: rgb(255, 255, 255);
   padding: 0.8rem;
 }
-
-/* mobile nav mode */
+/* mobile mode respansive */
 
 .mobile-nav {
   display: none;
@@ -223,67 +222,65 @@ h3 {
   margin: 1rem;
   overflow: none;
 }
-
-@media screen and (max-width: 530px) {
-  body {
-    display: grid;
-
-    grid-template-areas:
-      "first first first"
-      "second second second"
-      "third third third";
-    row-gap: 15rem;
-  }
-
-  #header-pic {
-    width: 100%;
-
-    animation: disappear linear;
-    animation-timeline: scroll();
-    animation-range: entry 0;
-  }
-  #differproject {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin-left: 6rem;
-  }
-  .projects {
-    margin: 0 0 0 0;
-  }
-
-  .category-project {
-    width: 80%;
-    border-radius: 18rem;
-    animation: appear linear;
-    animation-timeline: VIEW();
-    animation-range: entry 10%;
-    padding-top: 10rem;
-  }
-  #content {
-    width: 80%;
-    grid-area: second;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    row-gap: 2rem;
-    margin-left: 2rem;
-    padding-left: 1rem;
-    animation: appear linear;
-    animation-timeline: VIEW();
-    animation-range: entry 10%;
-  }
-  main {
-    grid-area: first;
-    width: 100%;
-  }
-
-  footer {
-    display: none;
-  }
-
+ 
   /* respansiv */
 
   @media screen and (max-width: 992px) {
+    body {
+      display: grid;
+  
+      grid-template-areas:
+        "first first first"
+        "second second second"
+        "third third third";
+      row-gap: 15rem;
+    }
+  
+    #header-pic {
+      width: 100%;
+  
+      animation: disappear linear;
+      animation-timeline: scroll();
+      animation-range: entry 0;
+    }
+    #differproject {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-left: 6rem;
+    }
+    .projects {
+      margin: 0 0 0 0;
+    }
+  
+    .category-project {
+      width: 80%;
+      border-radius: 18rem;
+      animation: appear linear;
+      animation-timeline: VIEW();
+      animation-range: entry 10%;
+      padding-top: 10rem;
+    }
+    #content {
+      width: 80%;
+      grid-area: second;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      row-gap: 2rem;
+      margin-left: 2rem;
+      padding-left: 1rem;
+      animation: appear linear;
+      animation-timeline: VIEW();
+      animation-range: entry 10%;
+    }
+    main {
+      grid-area: first;
+      width: 100%;
+    }
+  
+    footer {
+      display: none;
+    }
     .mobile-nav {
       display: block;
     }
@@ -301,4 +298,4 @@ h3 {
       display: block;
     }
   }
-}
+

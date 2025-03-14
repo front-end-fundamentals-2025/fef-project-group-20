@@ -18,8 +18,7 @@
         <a href="shop.html"><li>shop</li></a>
         <a href="about-us.html"><li>about us</li></a>
         <a href="contact-us.html"><li>contact us</li></a>
-        <a href="sign-in.html"><li>sign up</li></a>
-        <a href="sign-up.html"><li>sign in</li></a>
+        <a href="sign-in.html"><li>sign in/up</li></a>
         <li>
           <button id="open-cart">
             <img id="cart-img" src="icon/shopping-cart (4).png" alt="cart" />
@@ -40,7 +39,7 @@
           <h1>Pure Natural Almond</h1>
           <h3>weight : 300g</h3>
           <p class="product-desc">
-            Premium, organic honey sourced directly from local beekeepers
+            Premium, organic Almond sourced directly from local farms
           </p>
           <button class="add-to-cart" onclick="addToCart('Pure Almond butter', 'images/almond.png')">Add to cart</button>
         </div>
@@ -49,9 +48,9 @@
       <section id="product-description">
         <h2>Why Our Almond is Special</h2>
         <p>
-          Our honey is 100% natural and raw, carefully harvested to preserve all
+          Our Almond is 100% natural and raw, carefully harvested to preserve all
           the natural enzymes and beneficial properties. Each jar contains pure,
-          unfiltered honey with no additives or preservatives.
+          unfiltered Almond with no additives or preservatives.
         </p>
       </section>
 
@@ -237,14 +236,13 @@
         <h3>Security</h3>
         <ul class="foot">
           <a href="http://"><li>Terms of use</li></a>
-          <a href="http://"><li>privacy Policy</li></a>
           <a href="http://"><li>Copyright</li></a>
         </ul>
       </div>
       <div id="center">
         <h3>Social media</h3>
         <ul class="foot">
-          <a href="http://"><li>Watsapp</li></a>
+          <a href="http://"><li>WhatsApp</li></a>
           <a href="http://"><li>Telegram</li></a>
           <a href="http://"><li>Instagram</li></a>
         </ul>
@@ -277,17 +275,17 @@
       <div id="right">
         <h3>Sitemap</h3>
         <ul class="foot">
-          <a href="http://"><li>Term of use</li></a>
-          <a href="http://"><li>privacy Policy</li></a>
-          <a href="http://"><li>Copyright</li></a>
-        </ul>
-
-        <ul class="foot">
-          <a href="http://"><li>Term of use</li></a>
-          <a href="http://"><li>privacy Policy</li></a>
-          <a href="http://"><li>Copyright</li></a>
+          <a href="about-us.html"><li>about-us</li></a>
+          <a href="contact-us.html"><li>contact-us</li></a>
         </ul>
       </div>
     </footer>
+    <div id="cart-overlay" class="cart-overlay">
+      <div class="cart-overlay-content"></div>
+      <button id="close-cart">X</button>
+      <h1 id="cart">Your Cart</h1>
+      <div id="cart-container"></div>
+      <p id="total-price">Total = 0</p>
+    </div>
   </body>
 </html>
