@@ -1,3 +1,7 @@
+
+/*get help from this video for js part of slider 
+https://www.youtube.com/watch?v=749ta0nvj8s*/ 
+
 let slides = document.querySelectorAll(".slide");
 let current = 0;
 

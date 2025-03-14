@@ -154,7 +154,7 @@ div {
   display: none;
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 992px) {
   header {
     margin: 0;
     padding: 0;
@@ -162,6 +162,7 @@ div {
   .mobile-nav {
     display: block;
   }
+
   #verticallyVideo {
     display: block;
     width: 100%;

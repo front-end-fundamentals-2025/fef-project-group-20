@@ -1,4 +1,8 @@
 
+/*using youtube and also chatGPT for get help for js 
+https://youtu.be/_nnqP94Tu9g?si=zH3Q3wNSz04gKp9G
+https://chatgpt.com/share/67d4230e-3544-8004-b278-f16eeec024cb*/ 
+
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 const cartItem = document.getElementById("cart-container");
 const openCartButton =document.getElementById("open-cart");
@@ -7,9 +11,10 @@ const cartOverlay =document.getElementById("cart-overlay");
 const mobileOpenCart =document.getElementById("mobile-open-cart")
 
 // add to cart 
-function addToCart(name, image, price) {
-  cart.push({ name, image, price });
+function addToCart(name, image) {
+  cart.push({ name, image});
   localStorage.setItem("cart", JSON.stringify(cart));
+  alert("Added to Cart");
   if (document.getElementById("cart-container")) {
     showCart();
   }
@@ -23,7 +28,7 @@ function showCart() {
       div.className = "cartItem";
       div.innerHTML = `
      <img src="${item.image}" alt="${item.name}">
-     <span>${item.name} - ${item.price}</span>
+     <span>${item.name}</span>
      <button onclick="removeFromCart(${index})">Remove</button>`;
       cartItem.appendChild(div);
     });
